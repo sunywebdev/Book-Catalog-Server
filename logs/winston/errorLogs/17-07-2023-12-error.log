@@ -1,0 +1,153 @@
+{
+  index: 0,
+  code: 11000,
+  keyPattern: { phoneNumber: 1 },
+  keyValue: { phoneNumber: null },
+  level: 'error',
+  message: 'globalErrorHandler E11000 duplicate key error collection: test.users index: phoneNumber_1 dup key: { phoneNumber: null }',
+  stack: 'MongoServerError: E11000 duplicate key error collection: test.users index: phoneNumber_1 dup key: { phoneNumber: null }\n' +
+    '    at C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongodb\\src\\operations\\insert.ts:85:25\n' +
+    '    at C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongodb\\src\\cmap\\connection_pool.ts:574:11\n' +
+    '    at C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongodb\\src\\sdam\\server.ts:368:13\n' +
+    '    at handleOperationResult (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongodb\\src\\sdam\\server.ts:516:14)\n' +
+    '    at Connection.onMessage (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongodb\\src\\cmap\\connection.ts:418:5)\n' +
+    '    at MessageStream.<anonymous> (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongodb\\src\\cmap\\connection.ts:243:56)\n' +
+    '    at MessageStream.emit (node:events:513:28)\n' +
+    '    at processIncomingData (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongodb\\src\\cmap\\message_stream.ts:187:12)\n' +
+    '    at MessageStream._write (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongodb\\src\\cmap\\message_stream.ts:68:5)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:392:12)',
+  label: 'NodeExpressMongoose',
+  timestamp: '2023-07-17T06:09:00.937Z',
+  [Symbol(errorLabels)]: Set(0) {}
+}
+{
+  statusCode: 409,
+  level: 'error',
+  message: 'globalErrorHandler Email already exist',
+  stack: 'Error: Email already exist\n' +
+    '    at model.<anonymous> (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\src\\app\\modules\\users\\user.model.ts:55:22)\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\src\\app\\modules\\users\\user.model.ts:5:58)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'NodeExpressMongoose',
+  timestamp: '2023-07-17T06:17:23.953Z'
+}
+{
+  statusCode: 409,
+  level: 'error',
+  message: 'globalErrorHandler Email already exist',
+  stack: 'Error: Email already exist\n' +
+    '    at model.<anonymous> (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\src\\app\\modules\\users\\user.model.ts:55:22)\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\src\\app\\modules\\users\\user.model.ts:5:58)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'NodeExpressMongoose',
+  timestamp: '2023-07-17T06:20:08.099Z'
+}
+{
+  statusCode: 409,
+  level: 'error',
+  message: 'globalErrorHandler Email already exist',
+  stack: 'Error: Email already exist\n' +
+    '    at model.<anonymous> (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\src\\app\\modules\\users\\user.model.ts:55:22)\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\src\\app\\modules\\users\\user.model.ts:5:58)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'NodeExpressMongoose',
+  timestamp: '2023-07-17T06:20:10.626Z'
+}
+{
+  statusCode: 409,
+  level: 'error',
+  message: 'globalErrorHandler Email already exist',
+  stack: 'Error: Email already exist\n' +
+    '    at model.<anonymous> (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\src\\app\\modules\\users\\user.model.ts:55:22)\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\src\\app\\modules\\users\\user.model.ts:5:58)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'NodeExpressMongoose',
+  timestamp: '2023-07-17T06:20:18.343Z'
+}
+{
+  statusCode: 409,
+  level: 'error',
+  message: 'globalErrorHandler Email already exist',
+  stack: 'Error: Email already exist\n' +
+    '    at model.<anonymous> (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\src\\app\\modules\\users\\user.model.ts:55:22)\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\src\\app\\modules\\users\\user.model.ts:5:58)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'NodeExpressMongoose',
+  timestamp: '2023-07-17T06:43:01.390Z'
+}
+{
+  issues: [
+    {
+      code: 'invalid_type',
+      expected: 'date',
+      received: 'string',
+      path: [ 'body', 'publicationDate' ],
+      message: 'Expected date, received string'
+    },
+    {
+      code: 'invalid_type',
+      expected: 'string',
+      received: 'undefined',
+      path: [ 'body', 'banner' ],
+      message: 'Banner is required'
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  message: 'globalErrorHandler [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "date",\n' +
+    '    "received": "string",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "publicationDate"\n' +
+    '    ],\n' +
+    '    "message": "Expected date, received string"\n' +
+    '  },\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "banner"\n' +
+    '    ],\n' +
+    '    "message": "Banner is required"\n' +
+    '  }\n' +
+    ']',
+  stack: 'ZodError: [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "date",\n' +
+    '    "received": "string",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "publicationDate"\n' +
+    '    ],\n' +
+    '    "message": "Expected date, received string"\n' +
+    '  },\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "banner"\n' +
+    '    ],\n' +
+    '    "message": "Banner is required"\n' +
+    '  }\n' +
+    ']\n' +
+    '    at Object.get error [as error] (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\zod\\lib\\types.js:43:31)\n' +
+    '    at ZodObject.parseAsync (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\zod\\lib\\types.js:164:22)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'NodeExpressMongoose',
+  timestamp: '2023-07-17T06:43:47.470Z'
+}

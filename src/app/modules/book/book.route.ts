@@ -1,12 +1,20 @@
-import express from 'express'
-import { createBook, deleteBook, getBook, getBooks, updateBook } from './book.controller'
+import express from 'express';
+import {
+  createBook,
+  deleteBook,
+  getBook,
+  getBooks,
+  updateBook,
+} from './book.controller';
+import validateRequest from '../../middlewares/validateRequest';
+import { BookValidation } from './book.validation';
 
-const v1BookRoute = express.Router()
+const router = express.Router();
 
-v1BookRoute.post('/', createBook)
-v1BookRoute.get('/', getBooks)
-v1BookRoute.get('/:id', getBook)
-v1BookRoute.patch('/:id', updateBook)
-v1BookRoute.delete('/:id', deleteBook)
+router.post('/', validateRequest(BookValidation.addBookSchema), createBook);
+router.get('/', getBooks);
+router.get('/:id', getBook);
+router.patch('/:id', updateBook);
+router.delete('/:id', deleteBook);
 
-export default v1BookRoute
+export const BookRoutes = router;

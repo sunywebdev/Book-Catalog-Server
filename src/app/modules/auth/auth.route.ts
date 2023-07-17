@@ -7,7 +7,11 @@ import { ENUM_USER_ROLES } from '../../../enums/user';
 
 const router = express.Router();
 
-router.post('/signup', AuthController.signUpUser);
+router.post(
+  '/signup',
+  validateRequest(AuthValidation.signupZodSchema),
+  AuthController.signUpUser
+);
 router.post(
   '/login',
   validateRequest(AuthValidation.loginZodSchema),

@@ -6,14 +6,9 @@
     "auditLog": "C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\logs\\winston\\successLogs\\.845717b5e32d7b144ac4dceffc2f0899d9cb38ef-audit.json",
     "files": [
         {
-            "date": 1689567977921,
-            "name": "C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\logs\\winston\\successLogs\\17-07-2023-10-success.log",
-            "hash": "513cc3bdf8a4747dc2151e73f993e42d1c94c86d8ca85e4a3dbc4f518ea81be4"
-        },
-        {
-            "date": 1689570249899,
-            "name": "C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\logs\\winston\\successLogs\\17-07-2023-11-success.log",
-            "hash": "9a2aa20431146b66ced04c1b20f3bc477b7abdcdda28d5263d9ca12763813dfa"
+            "date": 1689573914299,
+            "name": "C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\logs\\winston\\successLogs\\17-07-2023-12-success.log",
+            "hash": "ebd8a62a9497554f6fe334315a466ba4e99e13b6f40986d5d988c200448041ff"
         }
     ],
     "hashType": "sha256"

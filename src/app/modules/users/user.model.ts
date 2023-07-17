@@ -2,20 +2,11 @@ import { Schema, model } from 'mongoose';
 import ApiError from '../../../errors/ApiError';
 import { IUser, UserModel } from './user.interface';
 import httpStatus from 'http-status';
-import { levels, roles } from './user.constant';
 import config from '../../../config';
 import bcrypt from 'bcrypt';
 
 const userSchema = new Schema<IUser, UserModel>(
   {
-    id: {
-      type: String,
-      required: true,
-    },
-    name: {
-      type: String,
-      required: true,
-    },
     email: {
       type: String,
       required: true,
@@ -24,29 +15,6 @@ const userSchema = new Schema<IUser, UserModel>(
       type: String,
       required: true,
       select: 0,
-    },
-    role: {
-      type: String,
-      required: true,
-      enum: roles,
-    },
-    level: {
-      type: Number,
-      required: true,
-      enum: levels,
-    },
-    company: {
-      type: String,
-      required: false,
-    },
-    needChangePassword: {
-      type: Boolean,
-      required: true,
-      default: true,
-    },
-    passwordChangedAt: {
-      type: Date,
-      required: false,
     },
   },
   {
@@ -60,10 +28,7 @@ const userSchema = new Schema<IUser, UserModel>(
 // is user exist
 userSchema.statics.isUserExist = async function (
   email: string
-): Promise<Pick<
-  IUser,
-  'email' | 'password' | 'needChangePassword' | 'role'
-> | null> {
+): Promise<Pick<IUser, 'email' | 'password'> | null> {
   return await User.findOne(
     { email: email },
     { email: 1, password: 1, needChangePassword: 1, role: 1 }

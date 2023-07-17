@@ -6,14 +6,9 @@
     "auditLog": "C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\logs\\winston\\errorLogs\\.13717477a7363ebd9dea3734fb738fb5fdf0a7f5-audit.json",
     "files": [
         {
-            "date": 1689567977928,
-            "name": "C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\logs\\winston\\errorLogs\\17-07-2023-10-error.log",
-            "hash": "4fe49c159586f7aa5a66d480bf163e310486bd1e9ddaf883e49d0c6264f4df02"
-        },
-        {
-            "date": 1689570249906,
-            "name": "C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\logs\\winston\\errorLogs\\17-07-2023-11-error.log",
-            "hash": "744e243335e728ee9f4f46167e18174e3c8b732e4251305648812f459594a7be"
+            "date": 1689573914305,
+            "name": "C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\logs\\winston\\errorLogs\\17-07-2023-12-error.log",
+            "hash": "81f94ccafeb0b97618162afeeeaa1d12f1cb3d81bb7d6ed36a8196e34c0a41d1"
         }
     ],
     "hashType": "sha256"

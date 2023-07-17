@@ -28,11 +28,10 @@ const loginUser = async (loginData: ILoginUser) => {
     throw new ApiError(httpStatus.UNAUTHORIZED, 'Password is incorrect');
   }
 
-  const { email: userEmail, role, needChangePassword } = isUserExist;
+  const { email: userEmail } = isUserExist;
   const accessToken = JwtHelper.createToken(
     {
       userEmail,
-      role,
     },
     config.jwt.secret as Secret,
     config.jwt.secret_expires_in as string
@@ -41,7 +40,6 @@ const loginUser = async (loginData: ILoginUser) => {
   const refreshToken = JwtHelper.createToken(
     {
       userEmail,
-      role,
     },
     config.jwt.refresh_secret as Secret,
     config.jwt.refresh_secret_expires_in as string
@@ -50,7 +48,6 @@ const loginUser = async (loginData: ILoginUser) => {
   return {
     accessToken,
     refreshToken,
-    needChangePassword,
   };
 };
 
@@ -72,7 +69,6 @@ const refreshToken = async (refreshToken: string) => {
   const newAccessToken = JwtHelper.createToken(
     {
       email: isUserExist.email,
-      role: isUserExist.role,
     },
     config.jwt.refresh_secret as Secret,
     config.jwt.refresh_secret_expires_in as string
@@ -108,8 +104,6 @@ const changePassword = async (
     { email: user?.email },
     {
       password: newHashedPassword,
-      needChangePassword: false,
-      passwordChangedAt: new Date(),
     }
   );
 };

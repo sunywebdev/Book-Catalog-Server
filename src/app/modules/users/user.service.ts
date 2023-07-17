@@ -1,4 +1,3 @@
-import Book from '../book/book.model';
 import { IUser } from './user.interface';
 import { User } from './user.model';
 

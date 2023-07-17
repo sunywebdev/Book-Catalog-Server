@@ -4,6 +4,7 @@ import config from '../../../config';
 import catchAsync from '../../../shared/catchAsync';
 import sendResponse from '../../../shared/sendResponse';
 import { AuthService } from './auth.service';
+import { IUser } from '../users/user.interface';
 
 export const signUpUser = catchAsync(async (req: Request, res: Response) => {
   const { ...loginData } = req.body;
@@ -68,9 +69,24 @@ const changePassword = catchAsync(async (req: Request, res: Response) => {
     statusCode: httpStatus.OK,
   });
 });
+
+const getLoggedInUser = catchAsync(async (req: Request, res: Response) => {
+  const token = req.headers.authorization;
+
+  const result = await AuthService.getLoggedInUser(token as string);
+
+  sendResponse<Partial<IUser>>(res, {
+    success: true,
+    statusCode: httpStatus.OK,
+    message: '',
+    data: result,
+  });
+});
+
 export const AuthController = {
   loginUser,
   refreshToken,
   changePassword,
   signUpUser,
+  getLoggedInUser,
 };

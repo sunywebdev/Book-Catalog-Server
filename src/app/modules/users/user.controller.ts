@@ -15,7 +15,29 @@ const getUserById = catchAsync(async (req: Request, res: Response) => {
     statusCode: httpStatus.OK,
   });
 });
+const updateUser = catchAsync(async (req: Request, res: Response) => {
+  const result = await UserService.updateUser(req.params.id, req.body);
+
+  sendResponse<IUser>(res, {
+    success: true,
+    statusCode: httpStatus.OK,
+    message: 'User updated successfully',
+    data: result,
+  });
+});
+const updateUserWishlist = catchAsync(async (req: Request, res: Response) => {
+  const result = await UserService.updateUserWishlist(req.params.id, req.body);
+
+  sendResponse<IUser>(res, {
+    success: true,
+    statusCode: httpStatus.OK,
+    message: 'User updated successfully',
+    data: result,
+  });
+});
 
 export const UserController = {
   getUserById,
+  updateUser,
+  updateUserWishlist,
 };

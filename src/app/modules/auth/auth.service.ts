@@ -2,11 +2,12 @@ import httpStatus from 'http-status';
 import ApiError from '../../../errors/ApiError';
 import { User } from '../users/user.model';
 import { ILoginUser } from './auth.interface';
-import { JwtPayload, Secret } from 'jsonwebtoken';
+import jwt, { JwtPayload, Secret } from 'jsonwebtoken';
 import config from '../../../config';
 import { JwtHelper } from '../../../helpers/jwt';
 import { IChangePassword } from '../../../interfaces/common';
 import bcrypt from 'bcrypt';
+import { IUser } from '../users/user.interface';
 
 export const signUpUser = async (data: ILoginUser) => {
   const result = await User.create(data);
@@ -108,9 +109,26 @@ const changePassword = async (
   );
 };
 
+const getLoggedInUser = async (
+  token: string
+): Promise<Partial<IUser> | null> => {
+  try {
+    const verifyUser = jwt.verify(
+      token,
+      config.jwt.secret as string
+    ) as JwtPayload;
+    return await User.findOne({ email: verifyUser?.userEmail }).select({
+      email: 1,
+    });
+  } catch (error) {
+    return null;
+  }
+};
+
 export const AuthService = {
   loginUser,
   refreshToken,
   changePassword,
   signUpUser,
+  getLoggedInUser,
 };

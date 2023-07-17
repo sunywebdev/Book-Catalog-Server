@@ -1,12 +1,16 @@
 /* eslint-disable no-unused-vars */
-import { Model } from 'mongoose';
+import { Model, Types } from 'mongoose';
 
-export type Roles = 'admin' | 'user' | 'guest';
-export type Levels = 1 | 2 | 3;
+type iReading = {
+  book: Types.ObjectId;
+  stage: 'Reading' | 'Reading Soon' | 'Finished';
+};
 
 export type IUser = {
   email: string;
   password: string;
+  wishlist: Types.ObjectId[];
+  reading: iReading[];
 };
 
 export type UserModel = {

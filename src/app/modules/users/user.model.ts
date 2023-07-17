@@ -16,6 +16,25 @@ const userSchema = new Schema<IUser, UserModel>(
       required: true,
       select: 0,
     },
+    wishlist: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: 'Book',
+      },
+    ],
+    reading: [
+      {
+        book: {
+          type: Schema.Types.ObjectId,
+          required: true,
+        },
+        stage: {
+          type: String,
+          required: true,
+          enum: ['Reading', 'Reading Soon', 'Finished'],
+        },
+      },
+    ],
   },
   {
     timestamps: true,

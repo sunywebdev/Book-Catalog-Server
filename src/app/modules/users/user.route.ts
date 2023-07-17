@@ -4,7 +4,7 @@ import { UserController } from './user.controller';
 const router = express.Router();
 
 router.get(
-  '/get-user-by-id/:id',
+  '/:id',
   /*   auth(
     ENUM_USER_ROLES.ADMIN,
     ENUM_USER_ROLES.SUPER_ADMIN,
@@ -12,5 +12,7 @@ router.get(
   ), */
   UserController.getUserById
 );
+router.patch('/:id', UserController.updateUser);
+router.patch('/:id/wishlist', UserController.updateUserWishlist);
 
 export const UserRoutes = router;

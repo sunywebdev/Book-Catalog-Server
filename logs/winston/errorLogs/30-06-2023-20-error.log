@@ -1,0 +1,441 @@
+{
+  issues: [
+    {
+      code: 'invalid_type',
+      expected: 'string',
+      received: 'undefined',
+      path: [ 'body', 'name' ],
+      message: 'Name is required'
+    },
+    {
+      code: 'invalid_type',
+      expected: 'string',
+      received: 'undefined',
+      path: [ 'body', 'email' ],
+      message: 'Email is required'
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  message: 'globalErrorHandler [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "name"\n' +
+    '    ],\n' +
+    '    "message": "Name is required"\n' +
+    '  },\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "email"\n' +
+    '    ],\n' +
+    '    "message": "Email is required"\n' +
+    '  }\n' +
+    ']',
+  stack: 'ZodError: [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "name"\n' +
+    '    ],\n' +
+    '    "message": "Name is required"\n' +
+    '  },\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "email"\n' +
+    '    ],\n' +
+    '    "message": "Email is required"\n' +
+    '  }\n' +
+    ']\n' +
+    '    at Object.get error [as error] (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\zod\\lib\\types.js:43:31)\n' +
+    '    at ZodObject.parseAsync (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\zod\\lib\\types.js:164:22)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'NodeExpressMongoose',
+  timestamp: '2023-06-30T14:45:29.628Z'
+}
+{
+  issues: [
+    {
+      code: 'invalid_type',
+      expected: 'string',
+      received: 'undefined',
+      path: [ 'body', 'email' ],
+      message: 'Email is required'
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  message: 'globalErrorHandler [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "email"\n' +
+    '    ],\n' +
+    '    "message": "Email is required"\n' +
+    '  }\n' +
+    ']',
+  stack: 'ZodError: [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "email"\n' +
+    '    ],\n' +
+    '    "message": "Email is required"\n' +
+    '  }\n' +
+    ']\n' +
+    '    at Object.get error [as error] (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\zod\\lib\\types.js:43:31)\n' +
+    '    at ZodObject.parseAsync (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\zod\\lib\\types.js:164:22)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'NodeExpressMongoose',
+  timestamp: '2023-06-30T14:46:12.838Z'
+}
+{
+  issues: [
+    {
+      code: 'invalid_type',
+      expected: 'string',
+      received: 'undefined',
+      path: [ 'body', 'name' ],
+      message: 'Name is required'
+    },
+    {
+      code: 'invalid_type',
+      expected: 'string',
+      received: 'undefined',
+      path: [ 'body', 'email' ],
+      message: 'Email is required'
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  message: 'globalErrorHandler [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "name"\n' +
+    '    ],\n' +
+    '    "message": "Name is required"\n' +
+    '  },\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "email"\n' +
+    '    ],\n' +
+    '    "message": "Email is required"\n' +
+    '  }\n' +
+    ']',
+  stack: 'ZodError: [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "name"\n' +
+    '    ],\n' +
+    '    "message": "Name is required"\n' +
+    '  },\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "email"\n' +
+    '    ],\n' +
+    '    "message": "Email is required"\n' +
+    '  }\n' +
+    ']\n' +
+    '    at Object.get error [as error] (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\zod\\lib\\types.js:43:31)\n' +
+    '    at ZodObject.parseAsync (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\zod\\lib\\types.js:164:22)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'NodeExpressMongoose',
+  timestamp: '2023-06-30T14:46:20.014Z'
+}
+{
+  issues: [
+    {
+      code: 'invalid_type',
+      expected: 'string',
+      received: 'undefined',
+      path: [ 'body', 'email' ],
+      message: 'Email is required'
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  message: 'globalErrorHandler [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "email"\n' +
+    '    ],\n' +
+    '    "message": "Email is required"\n' +
+    '  }\n' +
+    ']',
+  stack: 'ZodError: [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "email"\n' +
+    '    ],\n' +
+    '    "message": "Email is required"\n' +
+    '  }\n' +
+    ']\n' +
+    '    at Object.get error [as error] (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\zod\\lib\\types.js:43:31)\n' +
+    '    at ZodObject.parseAsync (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\zod\\lib\\types.js:164:22)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'NodeExpressMongoose',
+  timestamp: '2023-06-30T14:46:44.172Z'
+}
+{
+  issues: [
+    {
+      code: 'invalid_type',
+      expected: 'string',
+      received: 'undefined',
+      path: [ 'body', 'name' ],
+      message: 'Name is required'
+    },
+    {
+      code: 'invalid_type',
+      expected: 'string',
+      received: 'undefined',
+      path: [ 'body', 'email' ],
+      message: 'Email is required'
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  message: 'globalErrorHandler [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "name"\n' +
+    '    ],\n' +
+    '    "message": "Name is required"\n' +
+    '  },\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "email"\n' +
+    '    ],\n' +
+    '    "message": "Email is required"\n' +
+    '  }\n' +
+    ']',
+  stack: 'ZodError: [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "name"\n' +
+    '    ],\n' +
+    '    "message": "Name is required"\n' +
+    '  },\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "email"\n' +
+    '    ],\n' +
+    '    "message": "Email is required"\n' +
+    '  }\n' +
+    ']\n' +
+    '    at Object.get error [as error] (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\zod\\lib\\types.js:43:31)\n' +
+    '    at ZodObject.parseAsync (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\zod\\lib\\types.js:164:22)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'NodeExpressMongoose',
+  timestamp: '2023-06-30T14:46:49.920Z'
+}
+{
+  errors: {
+    email: ValidatorError: Path `email` is required.
+        at validate (C:\Users\SUNYS\Desktop\NodeExpressMongoose\node_modules\mongoose\lib\schematype.js:1349:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\SUNYS\Desktop\NodeExpressMongoose\node_modules\mongoose\lib\schematype.js:1333:7)
+        at C:\Users\SUNYS\Desktop\NodeExpressMongoose\node_modules\mongoose\lib\document.js:2932:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `email` is required.',
+        type: 'required',
+        path: 'email',
+        value: undefined
+      },
+      kind: 'required',
+      path: 'email',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'User validation failed',
+  level: 'error',
+  message: 'globalErrorHandler User validation failed: email: Path `email` is required.',
+  stack: 'ValidationError: User validation failed: email: Path `email` is required.\n' +
+    '    at model.Document.invalidate (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\mongoose\\lib\\document.js:3147:32)\n' +
+    '    at C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\mongoose\\lib\\document.js:2940:17\n' +
+    '    at C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\mongoose\\lib\\schematype.js:1352:9\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  label: 'NodeExpressMongoose',
+  timestamp: '2023-06-30T14:48:09.525Z'
+}
+{
+  errors: {
+    email: ValidatorError: Path `email` is required.
+        at validate (C:\Users\SUNYS\Desktop\NodeExpressMongoose\node_modules\mongoose\lib\schematype.js:1349:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\SUNYS\Desktop\NodeExpressMongoose\node_modules\mongoose\lib\schematype.js:1333:7)
+        at C:\Users\SUNYS\Desktop\NodeExpressMongoose\node_modules\mongoose\lib\document.js:2932:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `email` is required.',
+        type: 'required',
+        path: 'email',
+        value: undefined
+      },
+      kind: 'required',
+      path: 'email',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'User validation failed',
+  level: 'error',
+  message: 'globalErrorHandler User validation failed: email: Path `email` is required.',
+  stack: 'ValidationError: User validation failed: email: Path `email` is required.\n' +
+    '    at model.Document.invalidate (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\mongoose\\lib\\document.js:3147:32)\n' +
+    '    at C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\mongoose\\lib\\document.js:2940:17\n' +
+    '    at C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\mongoose\\lib\\schematype.js:1352:9\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  label: 'NodeExpressMongoose',
+  timestamp: '2023-06-30T14:48:42.752Z'
+}
+{
+  errors: {
+    email: ValidatorError: Path `email` is required.
+        at validate (C:\Users\SUNYS\Desktop\NodeExpressMongoose\node_modules\mongoose\lib\schematype.js:1349:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\SUNYS\Desktop\NodeExpressMongoose\node_modules\mongoose\lib\schematype.js:1333:7)
+        at C:\Users\SUNYS\Desktop\NodeExpressMongoose\node_modules\mongoose\lib\document.js:2932:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `email` is required.',
+        type: 'required',
+        path: 'email',
+        value: undefined
+      },
+      kind: 'required',
+      path: 'email',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'User validation failed',
+  level: 'error',
+  message: 'globalErrorHandler User validation failed: email: Path `email` is required.',
+  stack: 'ValidationError: User validation failed: email: Path `email` is required.\n' +
+    '    at model.Document.invalidate (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\mongoose\\lib\\document.js:3147:32)\n' +
+    '    at C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\mongoose\\lib\\document.js:2940:17\n' +
+    '    at C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\mongoose\\lib\\schematype.js:1352:9\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  label: 'NodeExpressMongoose',
+  timestamp: '2023-06-30T14:49:01.545Z'
+}
+{
+  issues: [
+    {
+      code: 'invalid_type',
+      expected: 'string',
+      received: 'undefined',
+      path: [ 'body', 'email' ],
+      message: 'Email is required'
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  message: 'globalErrorHandler [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "email"\n' +
+    '    ],\n' +
+    '    "message": "Email is required"\n' +
+    '  }\n' +
+    ']',
+  stack: 'ZodError: [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "email"\n' +
+    '    ],\n' +
+    '    "message": "Email is required"\n' +
+    '  }\n' +
+    ']\n' +
+    '    at Object.get error [as error] (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\zod\\lib\\types.js:43:31)\n' +
+    '    at ZodObject.parseAsync (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\zod\\lib\\types.js:164:22)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'NodeExpressMongoose',
+  timestamp: '2023-06-30T14:49:17.640Z'
+}

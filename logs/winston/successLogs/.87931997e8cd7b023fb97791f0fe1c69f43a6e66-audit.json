@@ -1,0 +1,115 @@
+{
+  "keep": {
+    "days": true,
+    "amount": 14
+  },
+  "auditLog": "C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\logs\\winston\\successLogs\\.87931997e8cd7b023fb97791f0fe1c69f43a6e66-audit.json",
+  "files": [
+    {
+      "date": 1688060996810,
+      "name": "C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\logs\\winston\\successLogs\\29-06-2023-23-success.log",
+      "hash": "3b49a2fdf389da55d94075054134754a0c53d4e725ccc53b232d5bd599726f41"
+    },
+    {
+      "date": 1688062097833,
+      "name": "C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\logs\\winston\\successLogs\\30-06-2023-00-success.log",
+      "hash": "dda25a33c910e241fa4d9d338c0e392a7fca3a8b3a5e2aff3abb47b156784fb4"
+    },
+    {
+      "date": 1688103850800,
+      "name": "C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\logs\\winston\\successLogs\\30-06-2023-11-success.log",
+      "hash": "35a68d6762d6b613d3f658cc6b28019437f5e41596281ab192641177ee31debc"
+    },
+    {
+      "date": 1688104955102,
+      "name": "C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\logs\\winston\\successLogs\\30-06-2023-12-success.log",
+      "hash": "f5bdd56010fc34984097632efa850b224004a8e68eb4f7506d605f0faa2acbcf"
+    },
+    {
+      "date": 1688112738844,
+      "name": "C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\logs\\winston\\successLogs\\30-06-2023-14-success.log",
+      "hash": "8f50afc6d7ebc67a9f768f505c446d5068fcd3b27a22fdf7e48358765163a52e"
+    },
+    {
+      "date": 1688136320254,
+      "name": "C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\logs\\winston\\successLogs\\30-06-2023-20-success.log",
+      "hash": "2048fa5d3d4dc41a80f951616924a5d70c99c95755b2d59f90aa0f301b890ec1"
+    },
+    {
+      "date": 1688137395470,
+      "name": "C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\logs\\winston\\successLogs\\30-06-2023-21-success.log",
+      "hash": "cd2454b2e1297b4d115703ca71f89f1471985714c016285bb262bdec33bb17c9"
+    },
+    {
+      "date": 1688141784024,
+      "name": "C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\logs\\winston\\successLogs\\30-06-2023-22-success.log",
+      "hash": "b4ff4b2b3948bb8647792363929e1b21316ed3d443e68aedf581daaed0ec9cf2"
+    },
+    {
+      "date": 1688145088097,
+      "name": "C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\logs\\winston\\successLogs\\30-06-2023-23-success.log",
+      "hash": "145d1993bcdc7aa040275ae8138a8bb56e6fca7ba256a78b5951104f203c13be"
+    },
+    {
+      "date": 1688148266384,
+      "name": "C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\logs\\winston\\successLogs\\01-07-2023-00-success.log",
+      "hash": "3b6e684bb0b0990bb9d23de27c6ccd1f5cac9c56ee42704bd1ca64c64b2248fd"
+    },
+    {
+      "date": 1688151631669,
+      "name": "C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\logs\\winston\\successLogs\\01-07-2023-01-success.log",
+      "hash": "48e640fe21a8543473275f9954670d5f274ad6408e6cb3d347819caa23751d10"
+    },
+    {
+      "date": 1688182871909,
+      "name": "C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\logs\\winston\\successLogs\\01-07-2023-09-success.log",
+      "hash": "e827d821c1c7861096c8f7a05a27fea550f9fb37b9b6b7ad572c77e8401f3608"
+    },
+    {
+      "date": 1688184407651,
+      "name": "C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\logs\\winston\\successLogs\\01-07-2023-10-success.log",
+      "hash": "6b0e4d963a59b7c553a3d55a6d8dd0d7cd1b6d50a7ceafd5f5fd01c1942359fa"
+    },
+    {
+      "date": 1688187607617,
+      "name": "C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\logs\\winston\\successLogs\\01-07-2023-11-success.log",
+      "hash": "b59f77e76fb18bcc3ebb031157dd5b6de9965b7e07b8749b7fe2f683b072c5ac"
+    },
+    {
+      "date": 1688192099521,
+      "name": "C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\logs\\winston\\successLogs\\01-07-2023-12-success.log",
+      "hash": "5b074fef8a86073e7b201f1df9eadbd1c1efe478105909289c01cbfc7cd61c13"
+    },
+    {
+      "date": 1688194807692,
+      "name": "C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\logs\\winston\\successLogs\\01-07-2023-13-success.log",
+      "hash": "4a80b2e34ea2d1cd4617446f044f7cb4f297f675292a5a89868cf4976fd6bcac"
+    },
+    {
+      "date": 1688281661505,
+      "name": "C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\logs\\winston\\successLogs\\02-07-2023-13-success.log",
+      "hash": "0c4bd7a65018cfed4ee78068211b898a0c0c90db8b43080141651d7ec45a5792"
+    },
+    {
+      "date": 1688372742960,
+      "name": "C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\logs\\winston\\successLogs\\03-07-2023-14-success.log",
+      "hash": "55a327f94e118d9017022035df3be367d447b3aa2c8533b66157f56b08d1a6d2"
+    },
+    {
+      "date": 1688374800163,
+      "name": "C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\logs\\winston\\successLogs\\03-07-2023-15-success.log",
+      "hash": "d023fd3666b8590a99d729d709c6e238ee72f4b475eec6468d8a8e28171cc691"
+    },
+    {
+      "date": 1688396012595,
+      "name": "C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\logs\\winston\\successLogs\\03-07-2023-20-success.log",
+      "hash": "35ea164faf021ececb8bc6ee263aeca1a205d08c35ba2de1aa52e92f5261cb45"
+    },
+    {
+      "date": 1688396444034,
+      "name": "C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\logs\\winston\\successLogs\\03-07-2023-21-success.log",
+      "hash": "a215b3347c9879e75b0b424adc8579ea7be1a14c6347c8f766a684c1d7678dee"
+    }
+  ],
+  "hashType": "sha256"
+}

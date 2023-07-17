@@ -1,0 +1,85 @@
+{
+  issues: [
+    {
+      code: 'invalid_type',
+      expected: 'string',
+      received: 'undefined',
+      path: [ 'body', 'email' ],
+      message: 'Email is required'
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  message: 'globalErrorHandler [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "email"\n' +
+    '    ],\n' +
+    '    "message": "Email is required"\n' +
+    '  }\n' +
+    ']',
+  stack: 'ZodError: [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "email"\n' +
+    '    ],\n' +
+    '    "message": "Email is required"\n' +
+    '  }\n' +
+    ']\n' +
+    '    at Object.get error [as error] (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\zod\\lib\\types.js:43:31)\n' +
+    '    at ZodObject.parseAsync (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\zod\\lib\\types.js:164:22)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'NodeExpressMongoose',
+  timestamp: '2023-06-30T16:27:32.738Z'
+}
+{
+  level: 'error',
+  message: "globalErrorHandler Cannot read properties of undefined (reading 'findOne')",
+  stack: "TypeError: Cannot read properties of undefined (reading 'findOne')\n" +
+    '    at C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\src\\app\\modules\\users\\user.utils.ts:5:6\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\src\\app\\modules\\users\\user.utils.ts:8:71\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at __awaiter (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\src\\app\\modules\\users\\user.utils.ts:4:12)\n' +
+    '    at findLastUserId (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\src\\app\\modules\\users\\user.utils.ts:3:42)\n' +
+    '    at C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\src\\app\\modules\\users\\user.utils.ts:19:26\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\src\\app\\modules\\users\\user.utils.ts:8:71\n' +
+    '    at new Promise (<anonymous>)',
+  label: 'NodeExpressMongoose',
+  timestamp: '2023-06-30T16:27:36.516Z'
+}
+{
+  statusCode: 409,
+  level: 'error',
+  message: 'globalErrorHandler Email already exist',
+  stack: 'Error: Email already exist\n' +
+    '    at model.<anonymous> (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\src\\app\\modules\\users\\user.model.ts:32:22)\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\src\\app\\modules\\users\\user.model.ts:5:58)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'NodeExpressMongoose',
+  timestamp: '2023-06-30T16:32:59.267Z'
+}
+{
+  statusCode: 409,
+  level: 'error',
+  message: 'globalErrorHandler Email already exist',
+  stack: 'Error: Email already exist\n' +
+    '    at model.<anonymous> (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\src\\app\\modules\\users\\user.model.ts:32:22)\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\src\\app\\modules\\users\\user.model.ts:5:58)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'NodeExpressMongoose',
+  timestamp: '2023-06-30T16:33:10.046Z'
+}

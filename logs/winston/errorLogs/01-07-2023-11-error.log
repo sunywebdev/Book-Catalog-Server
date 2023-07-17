@@ -1,0 +1,55 @@
+{
+  ok: 0,
+  code: 2,
+  codeName: 'BadValue',
+  level: 'error',
+  message: 'globalErrorHandler $regex has to be a string',
+  stack: 'MongoServerError: $regex has to be a string\n' +
+    '    at Connection.onMessage (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\mongodb\\src\\cmap\\connection.ts:413:18)\n' +
+    '    at MessageStream.<anonymous> (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\mongodb\\src\\cmap\\connection.ts:243:56)\n' +
+    '    at MessageStream.emit (node:events:513:28)\n' +
+    '    at processIncomingData (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\mongodb\\src\\cmap\\message_stream.ts:187:12)\n' +
+    '    at MessageStream._write (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\mongodb\\src\\cmap\\message_stream.ts:68:5)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:392:12)\n' +
+    '    at _write (node:internal/streams/writable:333:10)\n' +
+    '    at MessageStream.Writable.write (node:internal/streams/writable:337:10)\n' +
+    '    at Socket.ondata (node:internal/streams/readable:766:22)\n' +
+    '    at Socket.emit (node:events:513:28)',
+  label: 'NodeExpressMongoose',
+  timestamp: '2023-07-01T05:07:09.487Z',
+  [Symbol(errorLabels)]: Set(0) {}
+}
+{
+  stringValue: '"00015"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: '00015',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (C:\Users\SUNYS\Desktop\NodeExpressMongoose\node_modules\bson\src\objectid.ts:88:15)
+      at castObjectId (C:\Users\SUNYS\Desktop\NodeExpressMongoose\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\SUNYS\Desktop\NodeExpressMongoose\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (C:\Users\SUNYS\Desktop\NodeExpressMongoose\node_modules\mongoose\lib\schematype.js:1204:12)
+      at ObjectId.SchemaType.castForQuery (C:\Users\SUNYS\Desktop\NodeExpressMongoose\node_modules\mongoose\lib\schematype.js:1616:15)
+      at cast (C:\Users\SUNYS\Desktop\NodeExpressMongoose\node_modules\mongoose\lib\cast.js:356:32)
+      at model.Query.Query.cast (C:\Users\SUNYS\Desktop\NodeExpressMongoose\node_modules\mongoose\lib\query.js:4866:12)
+      at model.Query.Query._castConditions (C:\Users\SUNYS\Desktop\NodeExpressMongoose\node_modules\mongoose\lib\query.js:2210:10)
+      at model.Query._findOne (C:\Users\SUNYS\Desktop\NodeExpressMongoose\node_modules\mongoose\lib\query.js:2497:8)
+      at model.Query.exec (C:\Users\SUNYS\Desktop\NodeExpressMongoose\node_modules\mongoose\lib\query.js:4396:28),
+  valueType: 'string',
+  model: Model { User },
+  level: 'error',
+  message: 'globalErrorHandler Cast to ObjectId failed for value "00015" (type string) at path "_id" for model "User"',
+  stack: 'CastError: Cast to ObjectId failed for value "00015" (type string) at path "_id" for model "User"\n' +
+    '    at ObjectId.cast (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\mongoose\\lib\\schema\\objectid.js:248:11)\n' +
+    '    at ObjectId.SchemaType.applySetters (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\mongoose\\lib\\schematype.js:1204:12)\n' +
+    '    at ObjectId.SchemaType.castForQuery (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\mongoose\\lib\\schematype.js:1616:15)\n' +
+    '    at cast (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\mongoose\\lib\\cast.js:356:32)\n' +
+    '    at model.Query.Query.cast (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\mongoose\\lib\\query.js:4866:12)\n' +
+    '    at model.Query.Query._castConditions (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\mongoose\\lib\\query.js:2210:10)\n' +
+    '    at model.Query._findOne (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\mongoose\\lib\\query.js:2497:8)\n' +
+    '    at model.Query.exec (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\mongoose\\lib\\query.js:4396:28)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'NodeExpressMongoose',
+  timestamp: '2023-07-01T05:46:55.535Z'
+}

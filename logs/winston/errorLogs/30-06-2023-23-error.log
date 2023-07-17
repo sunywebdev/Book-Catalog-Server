@@ -1,0 +1,221 @@
+{
+  issues: [
+    {
+      expected: "'admin' | 'user'",
+      received: 'undefined',
+      code: 'invalid_type',
+      path: [ 'body', 'role' ],
+      message: 'Role is required'
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  message: 'globalErrorHandler [\n' +
+    '  {\n' +
+    `    "expected": "'admin' | 'user'",\n` +
+    '    "received": "undefined",\n' +
+    '    "code": "invalid_type",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "role"\n' +
+    '    ],\n' +
+    '    "message": "Role is required"\n' +
+    '  }\n' +
+    ']',
+  stack: 'ZodError: [\n' +
+    '  {\n' +
+    `    "expected": "'admin' | 'user'",\n` +
+    '    "received": "undefined",\n' +
+    '    "code": "invalid_type",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "role"\n' +
+    '    ],\n' +
+    '    "message": "Role is required"\n' +
+    '  }\n' +
+    ']\n' +
+    '    at Object.get error [as error] (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\zod\\lib\\types.js:43:31)\n' +
+    '    at ZodObject.parseAsync (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\zod\\lib\\types.js:164:22)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'NodeExpressMongoose',
+  timestamp: '2023-06-30T17:33:42.468Z'
+}
+{
+  issues: [
+    {
+      expected: "'admin' | 'user'",
+      received: 'undefined',
+      code: 'invalid_type',
+      path: [ 'body', 'role' ],
+      message: 'Role is required'
+    },
+    {
+      expected: "'1' | '2' | '3'",
+      received: 'undefined',
+      code: 'invalid_type',
+      path: [ 'body', 'level' ],
+      message: 'Level is required'
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  message: 'globalErrorHandler [\n' +
+    '  {\n' +
+    `    "expected": "'admin' | 'user'",\n` +
+    '    "received": "undefined",\n' +
+    '    "code": "invalid_type",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "role"\n' +
+    '    ],\n' +
+    '    "message": "Role is required"\n' +
+    '  },\n' +
+    '  {\n' +
+    `    "expected": "'1' | '2' | '3'",\n` +
+    '    "received": "undefined",\n' +
+    '    "code": "invalid_type",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "level"\n' +
+    '    ],\n' +
+    '    "message": "Level is required"\n' +
+    '  }\n' +
+    ']',
+  stack: 'ZodError: [\n' +
+    '  {\n' +
+    `    "expected": "'admin' | 'user'",\n` +
+    '    "received": "undefined",\n' +
+    '    "code": "invalid_type",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "role"\n' +
+    '    ],\n' +
+    '    "message": "Role is required"\n' +
+    '  },\n' +
+    '  {\n' +
+    `    "expected": "'1' | '2' | '3'",\n` +
+    '    "received": "undefined",\n' +
+    '    "code": "invalid_type",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "level"\n' +
+    '    ],\n' +
+    '    "message": "Level is required"\n' +
+    '  }\n' +
+    ']\n' +
+    '    at Object.get error [as error] (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\zod\\lib\\types.js:43:31)\n' +
+    '    at ZodObject.parseAsync (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\zod\\lib\\types.js:164:22)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'NodeExpressMongoose',
+  timestamp: '2023-06-30T17:44:35.150Z'
+}
+{
+  issues: [
+    {
+      received: 'Admin',
+      code: 'invalid_enum_value',
+      options: [ 'admin', 'user' ],
+      path: [ 'body', 'role' ],
+      message: "Invalid enum value. Expected 'admin' | 'user', received 'Admin'"
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  message: 'globalErrorHandler [\n' +
+    '  {\n' +
+    '    "received": "Admin",\n' +
+    '    "code": "invalid_enum_value",\n' +
+    '    "options": [\n' +
+    '      "admin",\n' +
+    '      "user"\n' +
+    '    ],\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "role"\n' +
+    '    ],\n' +
+    `    "message": "Invalid enum value. Expected 'admin' | 'user', received 'Admin'"\n` +
+    '  }\n' +
+    ']',
+  stack: 'ZodError: [\n' +
+    '  {\n' +
+    '    "received": "Admin",\n' +
+    '    "code": "invalid_enum_value",\n' +
+    '    "options": [\n' +
+    '      "admin",\n' +
+    '      "user"\n' +
+    '    ],\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "role"\n' +
+    '    ],\n' +
+    `    "message": "Invalid enum value. Expected 'admin' | 'user', received 'Admin'"\n` +
+    '  }\n' +
+    ']\n' +
+    '    at Object.get error [as error] (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\zod\\lib\\types.js:43:31)\n' +
+    '    at ZodObject.parseAsync (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\zod\\lib\\types.js:164:22)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'NodeExpressMongoose',
+  timestamp: '2023-06-30T17:45:08.555Z'
+}
+{
+  statusCode: 409,
+  level: 'error',
+  message: 'globalErrorHandler Email already exist',
+  stack: 'Error: Email already exist\n' +
+    '    at model.<anonymous> (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\src\\app\\modules\\users\\user.model.ts:43:22)\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\src\\app\\modules\\users\\user.model.ts:5:58)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'NodeExpressMongoose',
+  timestamp: '2023-06-30T17:45:16.854Z'
+}
+{
+  issues: [
+    {
+      code: 'invalid_type',
+      expected: 'number',
+      received: 'string',
+      path: [ 'body', 'level' ],
+      message: 'Expected number, received string'
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  message: 'globalErrorHandler [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "number",\n' +
+    '    "received": "string",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "level"\n' +
+    '    ],\n' +
+    '    "message": "Expected number, received string"\n' +
+    '  }\n' +
+    ']',
+  stack: 'ZodError: [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "number",\n' +
+    '    "received": "string",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "level"\n' +
+    '    ],\n' +
+    '    "message": "Expected number, received string"\n' +
+    '  }\n' +
+    ']\n' +
+    '    at Object.get error [as error] (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\zod\\lib\\types.js:43:31)\n' +
+    '    at ZodObject.parseAsync (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose\\node_modules\\zod\\lib\\types.js:164:22)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'NodeExpressMongoose',
+  timestamp: '2023-06-30T17:52:26.172Z'
+}

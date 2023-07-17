@@ -298,3 +298,27 @@
   label: 'NodeExpressMongoose',
   timestamp: '2023-07-17T08:31:44.239Z'
 }
+{
+  message: 'Database Connected successfully!!!',
+  level: 'info',
+  label: 'NodeExpressMongoose',
+  timestamp: '2023-07-17T08:47:29.875Z'
+}
+{
+  message: 'Server is running on port 5000',
+  level: 'info',
+  label: 'NodeExpressMongoose',
+  timestamp: '2023-07-17T08:47:29.887Z'
+}
+{
+  message: 'Database Connected successfully!!!',
+  level: 'info',
+  label: 'NodeExpressMongoose',
+  timestamp: '2023-07-17T08:55:42.128Z'
+}
+{
+  message: 'Server is running on port 5000',
+  level: 'info',
+  label: 'NodeExpressMongoose',
+  timestamp: '2023-07-17T08:55:42.157Z'
+}

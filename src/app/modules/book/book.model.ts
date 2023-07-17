@@ -19,7 +19,7 @@ const bookSchema = new Schema<iBook, iBookModel>(
       type: String,
       required: true,
     },
-    summery: {
+    summary: {
       type: String,
       required: true,
     },

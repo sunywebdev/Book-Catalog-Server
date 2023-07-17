@@ -1,0 +1,402 @@
+{
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-t4mdqo7-shard-00-01.r0u61nt.mongodb.net:27017' => ServerDescription {
+        address: 'ac-t4mdqo7-shard-00-01.r0u61nt.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 52905743,
+        lastWriteDate: 0,
+        error: MongoNetworkTimeoutError: connection <monitor> to 34.201.75.214:27017 timed out
+            at Timeout._onTimeout (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongodb\src\cmap\connection.ts:327:26)
+            at listOnTimeout (node:internal/timers:569:17)
+            at processTimers (node:internal/timers:512:7) {
+          [Symbol(errorLabels)]: Set(2) { 'ResetPool', 'InterruptInUseConnections' },
+          [Symbol(beforeHandshake)]: false
+        },
+        topologyVersion: null,
+        setName: null,
+        setVersion: null,
+        electionId: null,
+        logicalSessionTimeoutMinutes: null,
+        primary: null,
+        me: null,
+        '$clusterTime': null
+      },
+      'ac-t4mdqo7-shard-00-02.r0u61nt.mongodb.net:27017' => ServerDescription {
+        address: 'ac-t4mdqo7-shard-00-02.r0u61nt.mongodb.net:27017',
+        type: 'RSSecondary',
+        hosts: [
+          'ac-t4mdqo7-shard-00-00.r0u61nt.mongodb.net:27017',
+          'ac-t4mdqo7-shard-00-01.r0u61nt.mongodb.net:27017',
+          'ac-t4mdqo7-shard-00-02.r0u61nt.mongodb.net:27017'
+        ],
+        passives: [],
+        arbiters: [],
+        tags: {
+          workloadType: 'OPERATIONAL',
+          nodeType: 'ELECTABLE',
+          provider: 'AWS',
+          region: 'US_EAST_1'
+        },
+        minWireVersion: 0,
+        maxWireVersion: 17,
+        roundTripTime: 16.910454364769453,
+        lastUpdateTime: 52935817,
+        lastWriteDate: 2023-07-17T09:04:35.000Z,
+        error: null,
+        topologyVersion: {
+          processId: new ObjectId("64b2469afd037ccb2882ada6"),
+          counter: 3
+        },
+        setName: 'atlas-zbyqf9-shard-0',
+        setVersion: 2,
+        electionId: null,
+        logicalSessionTimeoutMinutes: 30,
+        primary: 'ac-t4mdqo7-shard-00-01.r0u61nt.mongodb.net:27017',
+        me: 'ac-t4mdqo7-shard-00-02.r0u61nt.mongodb.net:27017',
+        '$clusterTime': {
+          clusterTime: new Timestamp({ t: 1689584675, i: 20 }),
+          signature: {
+            hash: Binary.createFromBase64("Pj7uhvypntCcZuEdo8sySpgsMvw=", 0),
+            keyId: new Long("7221209195725455374")
+          }
+        }
+      },
+      'ac-t4mdqo7-shard-00-00.r0u61nt.mongodb.net:27017' => ServerDescription {
+        address: 'ac-t4mdqo7-shard-00-00.r0u61nt.mongodb.net:27017',
+        type: 'RSSecondary',
+        hosts: [
+          'ac-t4mdqo7-shard-00-00.r0u61nt.mongodb.net:27017',
+          'ac-t4mdqo7-shard-00-01.r0u61nt.mongodb.net:27017',
+          'ac-t4mdqo7-shard-00-02.r0u61nt.mongodb.net:27017'
+        ],
+        passives: [],
+        arbiters: [],
+        tags: {
+          provider: 'AWS',
+          nodeType: 'ELECTABLE',
+          region: 'US_EAST_1',
+          workloadType: 'OPERATIONAL'
+        },
+        minWireVersion: 0,
+        maxWireVersion: 17,
+        roundTripTime: 8.351259561897866,
+        lastUpdateTime: 52943590,
+        lastWriteDate: 2023-07-17T09:04:52.000Z,
+        error: null,
+        topologyVersion: {
+          processId: new ObjectId("64b24489c6c79ca7bdf0b929"),
+          counter: 4
+        },
+        setName: 'atlas-zbyqf9-shard-0',
+        setVersion: 2,
+        electionId: null,
+        logicalSessionTimeoutMinutes: 30,
+        primary: 'ac-t4mdqo7-shard-00-01.r0u61nt.mongodb.net:27017',
+        me: 'ac-t4mdqo7-shard-00-00.r0u61nt.mongodb.net:27017',
+        '$clusterTime': {
+          clusterTime: new Timestamp({ t: 1689584692, i: 21 }),
+          signature: {
+            hash: Binary.createFromBase64("LPAsB6sFGOmuIvlo1gUdI/d3V8A=", 0),
+            keyId: new Long("7221209195725455374")
+          }
+        }
+      }
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-zbyqf9-shard-0',
+    maxElectionId: new ObjectId("7fffffff00000000000002ac"),
+    maxSetVersion: 2,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: 30
+  },
+  code: undefined,
+  level: 'error',
+  message: 'globalErrorHandler connection <monitor> to 34.201.75.214:27017 timed out',
+  stack: 'MongoServerSelectionError: connection <monitor> to 34.201.75.214:27017 timed out\n' +
+    '    at Timeout._onTimeout (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongodb\\src\\sdam\\topology.ts:567:30)\n' +
+    '    at listOnTimeout (node:internal/timers:569:17)\n' +
+    '    at processTimers (node:internal/timers:512:7)',
+  label: 'NodeExpressMongoose',
+  timestamp: '2023-07-17T09:04:53.283Z',
+  [Symbol(errorLabels)]: Set(0) {}
+}
+{
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-t4mdqo7-shard-00-01.r0u61nt.mongodb.net:27017' => ServerDescription {
+        address: 'ac-t4mdqo7-shard-00-01.r0u61nt.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 52905743,
+        lastWriteDate: 0,
+        error: MongoNetworkTimeoutError: connection <monitor> to 34.201.75.214:27017 timed out
+            at Timeout._onTimeout (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongodb\src\cmap\connection.ts:327:26)
+            at listOnTimeout (node:internal/timers:569:17)
+            at processTimers (node:internal/timers:512:7) {
+          [Symbol(errorLabels)]: Set(2) { 'ResetPool', 'InterruptInUseConnections' },
+          [Symbol(beforeHandshake)]: false
+        },
+        topologyVersion: null,
+        setName: null,
+        setVersion: null,
+        electionId: null,
+        logicalSessionTimeoutMinutes: null,
+        primary: null,
+        me: null,
+        '$clusterTime': null
+      },
+      'ac-t4mdqo7-shard-00-02.r0u61nt.mongodb.net:27017' => ServerDescription {
+        address: 'ac-t4mdqo7-shard-00-02.r0u61nt.mongodb.net:27017',
+        type: 'RSSecondary',
+        hosts: [
+          'ac-t4mdqo7-shard-00-00.r0u61nt.mongodb.net:27017',
+          'ac-t4mdqo7-shard-00-01.r0u61nt.mongodb.net:27017',
+          'ac-t4mdqo7-shard-00-02.r0u61nt.mongodb.net:27017'
+        ],
+        passives: [],
+        arbiters: [],
+        tags: {
+          workloadType: 'OPERATIONAL',
+          nodeType: 'ELECTABLE',
+          provider: 'AWS',
+          region: 'US_EAST_1'
+        },
+        minWireVersion: 0,
+        maxWireVersion: 17,
+        roundTripTime: 16.910454364769453,
+        lastUpdateTime: 52935817,
+        lastWriteDate: 2023-07-17T09:04:35.000Z,
+        error: null,
+        topologyVersion: {
+          processId: new ObjectId("64b2469afd037ccb2882ada6"),
+          counter: 3
+        },
+        setName: 'atlas-zbyqf9-shard-0',
+        setVersion: 2,
+        electionId: null,
+        logicalSessionTimeoutMinutes: 30,
+        primary: 'ac-t4mdqo7-shard-00-01.r0u61nt.mongodb.net:27017',
+        me: 'ac-t4mdqo7-shard-00-02.r0u61nt.mongodb.net:27017',
+        '$clusterTime': {
+          clusterTime: new Timestamp({ t: 1689584675, i: 20 }),
+          signature: {
+            hash: Binary.createFromBase64("Pj7uhvypntCcZuEdo8sySpgsMvw=", 0),
+            keyId: new Long("7221209195725455374")
+          }
+        }
+      },
+      'ac-t4mdqo7-shard-00-00.r0u61nt.mongodb.net:27017' => ServerDescription {
+        address: 'ac-t4mdqo7-shard-00-00.r0u61nt.mongodb.net:27017',
+        type: 'RSSecondary',
+        hosts: [
+          'ac-t4mdqo7-shard-00-00.r0u61nt.mongodb.net:27017',
+          'ac-t4mdqo7-shard-00-01.r0u61nt.mongodb.net:27017',
+          'ac-t4mdqo7-shard-00-02.r0u61nt.mongodb.net:27017'
+        ],
+        passives: [],
+        arbiters: [],
+        tags: {
+          provider: 'AWS',
+          nodeType: 'ELECTABLE',
+          region: 'US_EAST_1',
+          workloadType: 'OPERATIONAL'
+        },
+        minWireVersion: 0,
+        maxWireVersion: 17,
+        roundTripTime: 8.351259561897866,
+        lastUpdateTime: 52943590,
+        lastWriteDate: 2023-07-17T09:04:52.000Z,
+        error: null,
+        topologyVersion: {
+          processId: new ObjectId("64b24489c6c79ca7bdf0b929"),
+          counter: 4
+        },
+        setName: 'atlas-zbyqf9-shard-0',
+        setVersion: 2,
+        electionId: null,
+        logicalSessionTimeoutMinutes: 30,
+        primary: 'ac-t4mdqo7-shard-00-01.r0u61nt.mongodb.net:27017',
+        me: 'ac-t4mdqo7-shard-00-00.r0u61nt.mongodb.net:27017',
+        '$clusterTime': {
+          clusterTime: new Timestamp({ t: 1689584692, i: 21 }),
+          signature: {
+            hash: Binary.createFromBase64("LPAsB6sFGOmuIvlo1gUdI/d3V8A=", 0),
+            keyId: new Long("7221209195725455374")
+          }
+        }
+      }
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-zbyqf9-shard-0',
+    maxElectionId: new ObjectId("7fffffff00000000000002ac"),
+    maxSetVersion: 2,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: 30
+  },
+  code: undefined,
+  level: 'error',
+  message: 'globalErrorHandler connection <monitor> to 34.201.75.214:27017 timed out',
+  stack: 'MongoServerSelectionError: connection <monitor> to 34.201.75.214:27017 timed out\n' +
+    '    at Timeout._onTimeout (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongodb\\src\\sdam\\topology.ts:567:30)\n' +
+    '    at listOnTimeout (node:internal/timers:569:17)\n' +
+    '    at processTimers (node:internal/timers:512:7)',
+  label: 'NodeExpressMongoose',
+  timestamp: '2023-07-17T09:04:53.377Z',
+  [Symbol(errorLabels)]: Set(0) {}
+}
+{
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-t4mdqo7-shard-00-01.r0u61nt.mongodb.net:27017' => ServerDescription {
+        address: 'ac-t4mdqo7-shard-00-01.r0u61nt.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 52905743,
+        lastWriteDate: 0,
+        error: MongoNetworkTimeoutError: connection <monitor> to 34.201.75.214:27017 timed out
+            at Timeout._onTimeout (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongodb\src\cmap\connection.ts:327:26)
+            at listOnTimeout (node:internal/timers:569:17)
+            at processTimers (node:internal/timers:512:7) {
+          [Symbol(errorLabels)]: Set(2) { 'ResetPool', 'InterruptInUseConnections' },
+          [Symbol(beforeHandshake)]: false
+        },
+        topologyVersion: null,
+        setName: null,
+        setVersion: null,
+        electionId: null,
+        logicalSessionTimeoutMinutes: null,
+        primary: null,
+        me: null,
+        '$clusterTime': null
+      },
+      'ac-t4mdqo7-shard-00-02.r0u61nt.mongodb.net:27017' => ServerDescription {
+        address: 'ac-t4mdqo7-shard-00-02.r0u61nt.mongodb.net:27017',
+        type: 'RSSecondary',
+        hosts: [
+          'ac-t4mdqo7-shard-00-00.r0u61nt.mongodb.net:27017',
+          'ac-t4mdqo7-shard-00-01.r0u61nt.mongodb.net:27017',
+          'ac-t4mdqo7-shard-00-02.r0u61nt.mongodb.net:27017'
+        ],
+        passives: [],
+        arbiters: [],
+        tags: {
+          workloadType: 'OPERATIONAL',
+          nodeType: 'ELECTABLE',
+          provider: 'AWS',
+          region: 'US_EAST_1'
+        },
+        minWireVersion: 0,
+        maxWireVersion: 17,
+        roundTripTime: 16.910454364769453,
+        lastUpdateTime: 52935817,
+        lastWriteDate: 2023-07-17T09:04:35.000Z,
+        error: null,
+        topologyVersion: {
+          processId: new ObjectId("64b2469afd037ccb2882ada6"),
+          counter: 3
+        },
+        setName: 'atlas-zbyqf9-shard-0',
+        setVersion: 2,
+        electionId: null,
+        logicalSessionTimeoutMinutes: 30,
+        primary: 'ac-t4mdqo7-shard-00-01.r0u61nt.mongodb.net:27017',
+        me: 'ac-t4mdqo7-shard-00-02.r0u61nt.mongodb.net:27017',
+        '$clusterTime': {
+          clusterTime: new Timestamp({ t: 1689584675, i: 20 }),
+          signature: {
+            hash: Binary.createFromBase64("Pj7uhvypntCcZuEdo8sySpgsMvw=", 0),
+            keyId: new Long("7221209195725455374")
+          }
+        }
+      },
+      'ac-t4mdqo7-shard-00-00.r0u61nt.mongodb.net:27017' => ServerDescription {
+        address: 'ac-t4mdqo7-shard-00-00.r0u61nt.mongodb.net:27017',
+        type: 'RSSecondary',
+        hosts: [
+          'ac-t4mdqo7-shard-00-00.r0u61nt.mongodb.net:27017',
+          'ac-t4mdqo7-shard-00-01.r0u61nt.mongodb.net:27017',
+          'ac-t4mdqo7-shard-00-02.r0u61nt.mongodb.net:27017'
+        ],
+        passives: [],
+        arbiters: [],
+        tags: {
+          provider: 'AWS',
+          nodeType: 'ELECTABLE',
+          region: 'US_EAST_1',
+          workloadType: 'OPERATIONAL'
+        },
+        minWireVersion: 0,
+        maxWireVersion: 17,
+        roundTripTime: 8.351259561897866,
+        lastUpdateTime: 52943590,
+        lastWriteDate: 2023-07-17T09:04:52.000Z,
+        error: null,
+        topologyVersion: {
+          processId: new ObjectId("64b24489c6c79ca7bdf0b929"),
+          counter: 4
+        },
+        setName: 'atlas-zbyqf9-shard-0',
+        setVersion: 2,
+        electionId: null,
+        logicalSessionTimeoutMinutes: 30,
+        primary: 'ac-t4mdqo7-shard-00-01.r0u61nt.mongodb.net:27017',
+        me: 'ac-t4mdqo7-shard-00-00.r0u61nt.mongodb.net:27017',
+        '$clusterTime': {
+          clusterTime: new Timestamp({ t: 1689584692, i: 21 }),
+          signature: {
+            hash: Binary.createFromBase64("LPAsB6sFGOmuIvlo1gUdI/d3V8A=", 0),
+            keyId: new Long("7221209195725455374")
+          }
+        }
+      }
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-zbyqf9-shard-0',
+    maxElectionId: new ObjectId("7fffffff00000000000002ac"),
+    maxSetVersion: 2,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: 30
+  },
+  code: undefined,
+  level: 'error',
+  message: 'globalErrorHandler connection <monitor> to 34.201.75.214:27017 timed out',
+  stack: 'MongoServerSelectionError: connection <monitor> to 34.201.75.214:27017 timed out\n' +
+    '    at Timeout._onTimeout (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongodb\\src\\sdam\\topology.ts:567:30)\n' +
+    '    at listOnTimeout (node:internal/timers:569:17)\n' +
+    '    at processTimers (node:internal/timers:512:7)',
+  label: 'NodeExpressMongoose',
+  timestamp: '2023-07-17T09:04:55.364Z',
+  [Symbol(errorLabels)]: Set(0) {}
+}

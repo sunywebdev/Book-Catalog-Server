@@ -11,8 +11,8 @@ const addBookSchema = z.object({
     genre: z.string({
       required_error: 'Genre is required',
     }),
-    summery: z.string({
-      required_error: 'Summery is required',
+    summary: z.string({
+      required_error: 'summary is required',
     }),
     publicationDate: z.string({
       required_error: 'Publication Date is required',

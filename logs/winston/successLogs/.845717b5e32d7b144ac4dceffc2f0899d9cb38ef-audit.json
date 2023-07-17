@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\logs\\winston\\successLogs\\.845717b5e32d7b144ac4dceffc2f0899d9cb38ef-audit.json",
+    "files": [
+        {
+            "date": 1689567977921,
+            "name": "C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\logs\\winston\\successLogs\\17-07-2023-10-success.log",
+            "hash": "513cc3bdf8a4747dc2151e73f993e42d1c94c86d8ca85e4a3dbc4f518ea81be4"
+        }
+    ],
+    "hashType": "sha256"
+}

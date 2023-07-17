@@ -8,6 +8,12 @@ import { JwtHelper } from '../../../helpers/jwt';
 import { IChangePassword } from '../../../interfaces/common';
 import bcrypt from 'bcrypt';
 
+export const signUpUser = async (data: ILoginUser) => {
+  const result = await User.create(data);
+  const { ...other } = result.toObject();
+  return other;
+};
+
 const loginUser = async (loginData: ILoginUser) => {
   const { email, password } = loginData;
   const isUserExist = await User.isUserExist(email);
@@ -112,4 +118,5 @@ export const AuthService = {
   loginUser,
   refreshToken,
   changePassword,
+  signUpUser,
 };

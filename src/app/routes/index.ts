@@ -1,22 +1,14 @@
 import express from 'express';
-import { AuthRoutes } from '../modules/auth/auth.route';
-import { UserRoutes } from '../modules/users/user.route';
+import v1AuthRoute from '../modules/auth/auth.route';
+import v1BookRoute from '../modules/book/book.route';
+import v1CommentRoute from '../modules/comment/comment.route';
+import v1UserRoute from '../modules/user/user.route';
 
-const routes = express.Router();
+const AppRouter = express.Router();
 
-const moduleRotes = [
-  {
-    path: '/users',
-    route: UserRoutes,
-  },
-  {
-    path: '/auth',
-    route: AuthRoutes,
-  },
-];
+AppRouter.use('/api/v1/auth/', v1AuthRoute);
+AppRouter.use('/api/v1/users/', v1UserRoute);
+AppRouter.use('/api/v1/books/', v1BookRoute);
+AppRouter.use('/api/v1/comments/', v1CommentRoute);
 
-moduleRotes.forEach(route => {
-  routes.use(route.path, route.route);
-});
-
-export default routes;
+export default AppRouter;

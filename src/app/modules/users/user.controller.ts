@@ -36,8 +36,20 @@ const updateUserWishlist = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+const allWishlist = catchAsync(async (req: Request, res: Response) => {
+  const result = await UserService.allWishlist(req.params.id);
+
+  sendResponse(res, {
+    success: true,
+    statusCode: httpStatus.OK,
+    message: 'Books found successfully',
+    data: result,
+  });
+});
+
 export const UserController = {
   getUserById,
   updateUser,
   updateUserWishlist,
+  allWishlist,
 };

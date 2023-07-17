@@ -1,404 +1,36 @@
 {
-  reason: TopologyDescription {
-    type: 'ReplicaSetNoPrimary',
-    servers: Map(3) {
-      'ac-t4mdqo7-shard-00-01.r0u61nt.mongodb.net:27017' => ServerDescription {
-        address: 'ac-t4mdqo7-shard-00-01.r0u61nt.mongodb.net:27017',
-        type: 'Unknown',
-        hosts: [],
-        passives: [],
-        arbiters: [],
-        tags: {},
-        minWireVersion: 0,
-        maxWireVersion: 0,
-        roundTripTime: -1,
-        lastUpdateTime: 52905743,
-        lastWriteDate: 0,
-        error: MongoNetworkTimeoutError: connection <monitor> to 34.201.75.214:27017 timed out
-            at Timeout._onTimeout (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongodb\src\cmap\connection.ts:327:26)
-            at listOnTimeout (node:internal/timers:569:17)
-            at processTimers (node:internal/timers:512:7) {
-          [Symbol(errorLabels)]: Set(2) { 'ResetPool', 'InterruptInUseConnections' },
-          [Symbol(beforeHandshake)]: false
-        },
-        topologyVersion: null,
-        setName: null,
-        setVersion: null,
-        electionId: null,
-        logicalSessionTimeoutMinutes: null,
-        primary: null,
-        me: null,
-        '$clusterTime': null
-      },
-      'ac-t4mdqo7-shard-00-02.r0u61nt.mongodb.net:27017' => ServerDescription {
-        address: 'ac-t4mdqo7-shard-00-02.r0u61nt.mongodb.net:27017',
-        type: 'RSSecondary',
-        hosts: [
-          'ac-t4mdqo7-shard-00-00.r0u61nt.mongodb.net:27017',
-          'ac-t4mdqo7-shard-00-01.r0u61nt.mongodb.net:27017',
-          'ac-t4mdqo7-shard-00-02.r0u61nt.mongodb.net:27017'
-        ],
-        passives: [],
-        arbiters: [],
-        tags: {
-          workloadType: 'OPERATIONAL',
-          nodeType: 'ELECTABLE',
-          provider: 'AWS',
-          region: 'US_EAST_1'
-        },
-        minWireVersion: 0,
-        maxWireVersion: 17,
-        roundTripTime: 16.910454364769453,
-        lastUpdateTime: 52935817,
-        lastWriteDate: 2023-07-17T09:04:35.000Z,
-        error: null,
-        topologyVersion: {
-          processId: new ObjectId("64b2469afd037ccb2882ada6"),
-          counter: 3
-        },
-        setName: 'atlas-zbyqf9-shard-0',
-        setVersion: 2,
-        electionId: null,
-        logicalSessionTimeoutMinutes: 30,
-        primary: 'ac-t4mdqo7-shard-00-01.r0u61nt.mongodb.net:27017',
-        me: 'ac-t4mdqo7-shard-00-02.r0u61nt.mongodb.net:27017',
-        '$clusterTime': {
-          clusterTime: new Timestamp({ t: 1689584675, i: 20 }),
-          signature: {
-            hash: Binary.createFromBase64("Pj7uhvypntCcZuEdo8sySpgsMvw=", 0),
-            keyId: new Long("7221209195725455374")
-          }
-        }
-      },
-      'ac-t4mdqo7-shard-00-00.r0u61nt.mongodb.net:27017' => ServerDescription {
-        address: 'ac-t4mdqo7-shard-00-00.r0u61nt.mongodb.net:27017',
-        type: 'RSSecondary',
-        hosts: [
-          'ac-t4mdqo7-shard-00-00.r0u61nt.mongodb.net:27017',
-          'ac-t4mdqo7-shard-00-01.r0u61nt.mongodb.net:27017',
-          'ac-t4mdqo7-shard-00-02.r0u61nt.mongodb.net:27017'
-        ],
-        passives: [],
-        arbiters: [],
-        tags: {
-          provider: 'AWS',
-          nodeType: 'ELECTABLE',
-          region: 'US_EAST_1',
-          workloadType: 'OPERATIONAL'
-        },
-        minWireVersion: 0,
-        maxWireVersion: 17,
-        roundTripTime: 8.351259561897866,
-        lastUpdateTime: 52943590,
-        lastWriteDate: 2023-07-17T09:04:52.000Z,
-        error: null,
-        topologyVersion: {
-          processId: new ObjectId("64b24489c6c79ca7bdf0b929"),
-          counter: 4
-        },
-        setName: 'atlas-zbyqf9-shard-0',
-        setVersion: 2,
-        electionId: null,
-        logicalSessionTimeoutMinutes: 30,
-        primary: 'ac-t4mdqo7-shard-00-01.r0u61nt.mongodb.net:27017',
-        me: 'ac-t4mdqo7-shard-00-00.r0u61nt.mongodb.net:27017',
-        '$clusterTime': {
-          clusterTime: new Timestamp({ t: 1689584692, i: 21 }),
-          signature: {
-            hash: Binary.createFromBase64("LPAsB6sFGOmuIvlo1gUdI/d3V8A=", 0),
-            keyId: new Long("7221209195725455374")
-          }
-        }
-      }
-    },
-    stale: false,
-    compatible: true,
-    heartbeatFrequencyMS: 10000,
-    localThresholdMS: 15,
-    setName: 'atlas-zbyqf9-shard-0',
-    maxElectionId: new ObjectId("7fffffff00000000000002ac"),
-    maxSetVersion: 2,
-    commonWireVersion: 0,
-    logicalSessionTimeoutMinutes: 30
-  },
-  code: undefined,
+  stringValue: '"undefined"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'undefined',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\bson\src\objectid.ts:88:15)
+      at castObjectId (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongoose\lib\schematype.js:1204:12)
+      at ObjectId.SchemaType.castForQuery (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongoose\lib\schematype.js:1616:15)
+      at cast (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongoose\lib\cast.js:356:32)
+      at model.Query.Query.cast (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongoose\lib\query.js:4866:12)
+      at model.Query.Query._castConditions (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongoose\lib\query.js:2210:10)
+      at model.Query._findOne (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongoose\lib\query.js:2497:8)
+      at model.Query.exec (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongoose\lib\query.js:4396:28),
+  valueType: 'string',
+  model: Model { User },
   level: 'error',
-  message: 'globalErrorHandler connection <monitor> to 34.201.75.214:27017 timed out',
-  stack: 'MongoServerSelectionError: connection <monitor> to 34.201.75.214:27017 timed out\n' +
-    '    at Timeout._onTimeout (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongodb\\src\\sdam\\topology.ts:567:30)\n' +
-    '    at listOnTimeout (node:internal/timers:569:17)\n' +
-    '    at processTimers (node:internal/timers:512:7)',
+  message: 'globalErrorHandler Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "User"',
+  stack: 'CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "User"\n' +
+    '    at ObjectId.cast (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\schema\\objectid.js:248:11)\n' +
+    '    at ObjectId.SchemaType.applySetters (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\schematype.js:1204:12)\n' +
+    '    at ObjectId.SchemaType.castForQuery (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\schematype.js:1616:15)\n' +
+    '    at cast (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\cast.js:356:32)\n' +
+    '    at model.Query.Query.cast (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\query.js:4866:12)\n' +
+    '    at model.Query.Query._castConditions (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\query.js:2210:10)\n' +
+    '    at model.Query._findOne (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\query.js:2497:8)\n' +
+    '    at model.Query.exec (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\query.js:4396:28)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
   label: 'NodeExpressMongoose',
-  timestamp: '2023-07-17T09:04:53.283Z',
-  [Symbol(errorLabels)]: Set(0) {}
-}
-{
-  reason: TopologyDescription {
-    type: 'ReplicaSetNoPrimary',
-    servers: Map(3) {
-      'ac-t4mdqo7-shard-00-01.r0u61nt.mongodb.net:27017' => ServerDescription {
-        address: 'ac-t4mdqo7-shard-00-01.r0u61nt.mongodb.net:27017',
-        type: 'Unknown',
-        hosts: [],
-        passives: [],
-        arbiters: [],
-        tags: {},
-        minWireVersion: 0,
-        maxWireVersion: 0,
-        roundTripTime: -1,
-        lastUpdateTime: 52905743,
-        lastWriteDate: 0,
-        error: MongoNetworkTimeoutError: connection <monitor> to 34.201.75.214:27017 timed out
-            at Timeout._onTimeout (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongodb\src\cmap\connection.ts:327:26)
-            at listOnTimeout (node:internal/timers:569:17)
-            at processTimers (node:internal/timers:512:7) {
-          [Symbol(errorLabels)]: Set(2) { 'ResetPool', 'InterruptInUseConnections' },
-          [Symbol(beforeHandshake)]: false
-        },
-        topologyVersion: null,
-        setName: null,
-        setVersion: null,
-        electionId: null,
-        logicalSessionTimeoutMinutes: null,
-        primary: null,
-        me: null,
-        '$clusterTime': null
-      },
-      'ac-t4mdqo7-shard-00-02.r0u61nt.mongodb.net:27017' => ServerDescription {
-        address: 'ac-t4mdqo7-shard-00-02.r0u61nt.mongodb.net:27017',
-        type: 'RSSecondary',
-        hosts: [
-          'ac-t4mdqo7-shard-00-00.r0u61nt.mongodb.net:27017',
-          'ac-t4mdqo7-shard-00-01.r0u61nt.mongodb.net:27017',
-          'ac-t4mdqo7-shard-00-02.r0u61nt.mongodb.net:27017'
-        ],
-        passives: [],
-        arbiters: [],
-        tags: {
-          workloadType: 'OPERATIONAL',
-          nodeType: 'ELECTABLE',
-          provider: 'AWS',
-          region: 'US_EAST_1'
-        },
-        minWireVersion: 0,
-        maxWireVersion: 17,
-        roundTripTime: 16.910454364769453,
-        lastUpdateTime: 52935817,
-        lastWriteDate: 2023-07-17T09:04:35.000Z,
-        error: null,
-        topologyVersion: {
-          processId: new ObjectId("64b2469afd037ccb2882ada6"),
-          counter: 3
-        },
-        setName: 'atlas-zbyqf9-shard-0',
-        setVersion: 2,
-        electionId: null,
-        logicalSessionTimeoutMinutes: 30,
-        primary: 'ac-t4mdqo7-shard-00-01.r0u61nt.mongodb.net:27017',
-        me: 'ac-t4mdqo7-shard-00-02.r0u61nt.mongodb.net:27017',
-        '$clusterTime': {
-          clusterTime: new Timestamp({ t: 1689584675, i: 20 }),
-          signature: {
-            hash: Binary.createFromBase64("Pj7uhvypntCcZuEdo8sySpgsMvw=", 0),
-            keyId: new Long("7221209195725455374")
-          }
-        }
-      },
-      'ac-t4mdqo7-shard-00-00.r0u61nt.mongodb.net:27017' => ServerDescription {
-        address: 'ac-t4mdqo7-shard-00-00.r0u61nt.mongodb.net:27017',
-        type: 'RSSecondary',
-        hosts: [
-          'ac-t4mdqo7-shard-00-00.r0u61nt.mongodb.net:27017',
-          'ac-t4mdqo7-shard-00-01.r0u61nt.mongodb.net:27017',
-          'ac-t4mdqo7-shard-00-02.r0u61nt.mongodb.net:27017'
-        ],
-        passives: [],
-        arbiters: [],
-        tags: {
-          provider: 'AWS',
-          nodeType: 'ELECTABLE',
-          region: 'US_EAST_1',
-          workloadType: 'OPERATIONAL'
-        },
-        minWireVersion: 0,
-        maxWireVersion: 17,
-        roundTripTime: 8.351259561897866,
-        lastUpdateTime: 52943590,
-        lastWriteDate: 2023-07-17T09:04:52.000Z,
-        error: null,
-        topologyVersion: {
-          processId: new ObjectId("64b24489c6c79ca7bdf0b929"),
-          counter: 4
-        },
-        setName: 'atlas-zbyqf9-shard-0',
-        setVersion: 2,
-        electionId: null,
-        logicalSessionTimeoutMinutes: 30,
-        primary: 'ac-t4mdqo7-shard-00-01.r0u61nt.mongodb.net:27017',
-        me: 'ac-t4mdqo7-shard-00-00.r0u61nt.mongodb.net:27017',
-        '$clusterTime': {
-          clusterTime: new Timestamp({ t: 1689584692, i: 21 }),
-          signature: {
-            hash: Binary.createFromBase64("LPAsB6sFGOmuIvlo1gUdI/d3V8A=", 0),
-            keyId: new Long("7221209195725455374")
-          }
-        }
-      }
-    },
-    stale: false,
-    compatible: true,
-    heartbeatFrequencyMS: 10000,
-    localThresholdMS: 15,
-    setName: 'atlas-zbyqf9-shard-0',
-    maxElectionId: new ObjectId("7fffffff00000000000002ac"),
-    maxSetVersion: 2,
-    commonWireVersion: 0,
-    logicalSessionTimeoutMinutes: 30
-  },
-  code: undefined,
-  level: 'error',
-  message: 'globalErrorHandler connection <monitor> to 34.201.75.214:27017 timed out',
-  stack: 'MongoServerSelectionError: connection <monitor> to 34.201.75.214:27017 timed out\n' +
-    '    at Timeout._onTimeout (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongodb\\src\\sdam\\topology.ts:567:30)\n' +
-    '    at listOnTimeout (node:internal/timers:569:17)\n' +
-    '    at processTimers (node:internal/timers:512:7)',
-  label: 'NodeExpressMongoose',
-  timestamp: '2023-07-17T09:04:53.377Z',
-  [Symbol(errorLabels)]: Set(0) {}
-}
-{
-  reason: TopologyDescription {
-    type: 'ReplicaSetNoPrimary',
-    servers: Map(3) {
-      'ac-t4mdqo7-shard-00-01.r0u61nt.mongodb.net:27017' => ServerDescription {
-        address: 'ac-t4mdqo7-shard-00-01.r0u61nt.mongodb.net:27017',
-        type: 'Unknown',
-        hosts: [],
-        passives: [],
-        arbiters: [],
-        tags: {},
-        minWireVersion: 0,
-        maxWireVersion: 0,
-        roundTripTime: -1,
-        lastUpdateTime: 52905743,
-        lastWriteDate: 0,
-        error: MongoNetworkTimeoutError: connection <monitor> to 34.201.75.214:27017 timed out
-            at Timeout._onTimeout (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongodb\src\cmap\connection.ts:327:26)
-            at listOnTimeout (node:internal/timers:569:17)
-            at processTimers (node:internal/timers:512:7) {
-          [Symbol(errorLabels)]: Set(2) { 'ResetPool', 'InterruptInUseConnections' },
-          [Symbol(beforeHandshake)]: false
-        },
-        topologyVersion: null,
-        setName: null,
-        setVersion: null,
-        electionId: null,
-        logicalSessionTimeoutMinutes: null,
-        primary: null,
-        me: null,
-        '$clusterTime': null
-      },
-      'ac-t4mdqo7-shard-00-02.r0u61nt.mongodb.net:27017' => ServerDescription {
-        address: 'ac-t4mdqo7-shard-00-02.r0u61nt.mongodb.net:27017',
-        type: 'RSSecondary',
-        hosts: [
-          'ac-t4mdqo7-shard-00-00.r0u61nt.mongodb.net:27017',
-          'ac-t4mdqo7-shard-00-01.r0u61nt.mongodb.net:27017',
-          'ac-t4mdqo7-shard-00-02.r0u61nt.mongodb.net:27017'
-        ],
-        passives: [],
-        arbiters: [],
-        tags: {
-          workloadType: 'OPERATIONAL',
-          nodeType: 'ELECTABLE',
-          provider: 'AWS',
-          region: 'US_EAST_1'
-        },
-        minWireVersion: 0,
-        maxWireVersion: 17,
-        roundTripTime: 16.910454364769453,
-        lastUpdateTime: 52935817,
-        lastWriteDate: 2023-07-17T09:04:35.000Z,
-        error: null,
-        topologyVersion: {
-          processId: new ObjectId("64b2469afd037ccb2882ada6"),
-          counter: 3
-        },
-        setName: 'atlas-zbyqf9-shard-0',
-        setVersion: 2,
-        electionId: null,
-        logicalSessionTimeoutMinutes: 30,
-        primary: 'ac-t4mdqo7-shard-00-01.r0u61nt.mongodb.net:27017',
-        me: 'ac-t4mdqo7-shard-00-02.r0u61nt.mongodb.net:27017',
-        '$clusterTime': {
-          clusterTime: new Timestamp({ t: 1689584675, i: 20 }),
-          signature: {
-            hash: Binary.createFromBase64("Pj7uhvypntCcZuEdo8sySpgsMvw=", 0),
-            keyId: new Long("7221209195725455374")
-          }
-        }
-      },
-      'ac-t4mdqo7-shard-00-00.r0u61nt.mongodb.net:27017' => ServerDescription {
-        address: 'ac-t4mdqo7-shard-00-00.r0u61nt.mongodb.net:27017',
-        type: 'RSSecondary',
-        hosts: [
-          'ac-t4mdqo7-shard-00-00.r0u61nt.mongodb.net:27017',
-          'ac-t4mdqo7-shard-00-01.r0u61nt.mongodb.net:27017',
-          'ac-t4mdqo7-shard-00-02.r0u61nt.mongodb.net:27017'
-        ],
-        passives: [],
-        arbiters: [],
-        tags: {
-          provider: 'AWS',
-          nodeType: 'ELECTABLE',
-          region: 'US_EAST_1',
-          workloadType: 'OPERATIONAL'
-        },
-        minWireVersion: 0,
-        maxWireVersion: 17,
-        roundTripTime: 8.351259561897866,
-        lastUpdateTime: 52943590,
-        lastWriteDate: 2023-07-17T09:04:52.000Z,
-        error: null,
-        topologyVersion: {
-          processId: new ObjectId("64b24489c6c79ca7bdf0b929"),
-          counter: 4
-        },
-        setName: 'atlas-zbyqf9-shard-0',
-        setVersion: 2,
-        electionId: null,
-        logicalSessionTimeoutMinutes: 30,
-        primary: 'ac-t4mdqo7-shard-00-01.r0u61nt.mongodb.net:27017',
-        me: 'ac-t4mdqo7-shard-00-00.r0u61nt.mongodb.net:27017',
-        '$clusterTime': {
-          clusterTime: new Timestamp({ t: 1689584692, i: 21 }),
-          signature: {
-            hash: Binary.createFromBase64("LPAsB6sFGOmuIvlo1gUdI/d3V8A=", 0),
-            keyId: new Long("7221209195725455374")
-          }
-        }
-      }
-    },
-    stale: false,
-    compatible: true,
-    heartbeatFrequencyMS: 10000,
-    localThresholdMS: 15,
-    setName: 'atlas-zbyqf9-shard-0',
-    maxElectionId: new ObjectId("7fffffff00000000000002ac"),
-    maxSetVersion: 2,
-    commonWireVersion: 0,
-    logicalSessionTimeoutMinutes: 30
-  },
-  code: undefined,
-  level: 'error',
-  message: 'globalErrorHandler connection <monitor> to 34.201.75.214:27017 timed out',
-  stack: 'MongoServerSelectionError: connection <monitor> to 34.201.75.214:27017 timed out\n' +
-    '    at Timeout._onTimeout (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongodb\\src\\sdam\\topology.ts:567:30)\n' +
-    '    at listOnTimeout (node:internal/timers:569:17)\n' +
-    '    at processTimers (node:internal/timers:512:7)',
-  label: 'NodeExpressMongoose',
-  timestamp: '2023-07-17T09:04:55.364Z',
-  [Symbol(errorLabels)]: Set(0) {}
+  timestamp: '2023-07-17T10:06:33.464Z'
 }
 {
   stringValue: '"undefined"',
@@ -432,7 +64,7 @@
     '    at model.Query.exec (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\query.js:4396:28)\n' +
     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
   label: 'NodeExpressMongoose',
-  timestamp: '2023-07-17T09:50:23.948Z'
+  timestamp: '2023-07-17T10:10:24.907Z'
 }
 {
   stringValue: '"undefined"',
@@ -466,7 +98,7 @@
     '    at model.Query.exec (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\query.js:4396:28)\n' +
     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
   label: 'NodeExpressMongoose',
-  timestamp: '2023-07-17T09:50:44.868Z'
+  timestamp: '2023-07-17T10:10:58.185Z'
 }
 {
   stringValue: '"undefined"',
@@ -500,7 +132,7 @@
     '    at model.Query.exec (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\query.js:4396:28)\n' +
     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
   label: 'NodeExpressMongoose',
-  timestamp: '2023-07-17T09:54:19.815Z'
+  timestamp: '2023-07-17T10:11:19.686Z'
 }
 {
   stringValue: '"undefined"',
@@ -534,7 +166,7 @@
     '    at model.Query.exec (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\query.js:4396:28)\n' +
     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
   label: 'NodeExpressMongoose',
-  timestamp: '2023-07-17T09:54:23.562Z'
+  timestamp: '2023-07-17T10:13:11.119Z'
 }
 {
   stringValue: '"undefined"',
@@ -568,7 +200,7 @@
     '    at model.Query.exec (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\query.js:4396:28)\n' +
     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
   label: 'NodeExpressMongoose',
-  timestamp: '2023-07-17T09:54:32.403Z'
+  timestamp: '2023-07-17T10:13:22.045Z'
 }
 {
   stringValue: '"undefined"',
@@ -588,10 +220,10 @@
       at model.Query._findOne (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongoose\lib\query.js:2497:8)
       at model.Query.exec (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongoose\lib\query.js:4396:28),
   valueType: 'string',
-  model: Model { Book },
+  model: Model { User },
   level: 'error',
-  message: 'globalErrorHandler Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Book"',
-  stack: 'CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Book"\n' +
+  message: 'globalErrorHandler Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "User"',
+  stack: 'CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "User"\n' +
     '    at ObjectId.cast (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\schema\\objectid.js:248:11)\n' +
     '    at ObjectId.SchemaType.applySetters (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\schematype.js:1204:12)\n' +
     '    at ObjectId.SchemaType.castForQuery (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\schematype.js:1616:15)\n' +
@@ -602,14 +234,14 @@
     '    at model.Query.exec (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\query.js:4396:28)\n' +
     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
   label: 'NodeExpressMongoose',
-  timestamp: '2023-07-17T09:55:17.267Z'
+  timestamp: '2023-07-17T10:14:23.864Z'
 }
 {
   stringValue: '"undefined"',
   messageFormat: undefined,
   kind: 'ObjectId',
   value: 'undefined',
-  path: 'book',
+  path: '_id',
   reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
       at new ObjectId (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\bson\src\objectid.ts:88:15)
       at castObjectId (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongoose\lib\cast\objectid.js:25:12)
@@ -619,22 +251,90 @@
       at cast (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongoose\lib\cast.js:356:32)
       at model.Query.Query.cast (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongoose\lib\query.js:4866:12)
       at model.Query.Query._castConditions (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongoose\lib\query.js:2210:10)
-      at model.Query._find (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongoose\lib\query.js:2236:8)
+      at model.Query._findOne (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongoose\lib\query.js:2497:8)
       at model.Query.exec (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongoose\lib\query.js:4396:28),
   valueType: 'string',
-  model: Model { Comment },
+  model: Model { User },
   level: 'error',
-  message: 'globalErrorHandler Cast to ObjectId failed for value "undefined" (type string) at path "book" for model "Comment"',
-  stack: 'CastError: Cast to ObjectId failed for value "undefined" (type string) at path "book" for model "Comment"\n' +
+  message: 'globalErrorHandler Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "User"',
+  stack: 'CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "User"\n' +
     '    at ObjectId.cast (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\schema\\objectid.js:248:11)\n' +
     '    at ObjectId.SchemaType.applySetters (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\schematype.js:1204:12)\n' +
     '    at ObjectId.SchemaType.castForQuery (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\schematype.js:1616:15)\n' +
     '    at cast (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\cast.js:356:32)\n' +
     '    at model.Query.Query.cast (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\query.js:4866:12)\n' +
     '    at model.Query.Query._castConditions (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\query.js:2210:10)\n' +
-    '    at model.Query._find (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\query.js:2236:8)\n' +
+    '    at model.Query._findOne (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\query.js:2497:8)\n' +
     '    at model.Query.exec (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\query.js:4396:28)\n' +
     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
   label: 'NodeExpressMongoose',
-  timestamp: '2023-07-17T09:55:17.278Z'
+  timestamp: '2023-07-17T10:15:17.374Z'
+}
+{
+  stringValue: '"undefined"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'undefined',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\bson\src\objectid.ts:88:15)
+      at castObjectId (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongoose\lib\schematype.js:1204:12)
+      at ObjectId.SchemaType.castForQuery (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongoose\lib\schematype.js:1616:15)
+      at cast (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongoose\lib\cast.js:356:32)
+      at model.Query.Query.cast (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongoose\lib\query.js:4866:12)
+      at model.Query.Query._castConditions (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongoose\lib\query.js:2210:10)
+      at model.Query._findOne (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongoose\lib\query.js:2497:8)
+      at model.Query.exec (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongoose\lib\query.js:4396:28),
+  valueType: 'string',
+  model: Model { User },
+  level: 'error',
+  message: 'globalErrorHandler Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "User"',
+  stack: 'CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "User"\n' +
+    '    at ObjectId.cast (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\schema\\objectid.js:248:11)\n' +
+    '    at ObjectId.SchemaType.applySetters (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\schematype.js:1204:12)\n' +
+    '    at ObjectId.SchemaType.castForQuery (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\schematype.js:1616:15)\n' +
+    '    at cast (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\cast.js:356:32)\n' +
+    '    at model.Query.Query.cast (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\query.js:4866:12)\n' +
+    '    at model.Query.Query._castConditions (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\query.js:2210:10)\n' +
+    '    at model.Query._findOne (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\query.js:2497:8)\n' +
+    '    at model.Query.exec (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\query.js:4396:28)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'NodeExpressMongoose',
+  timestamp: '2023-07-17T10:15:28.624Z'
+}
+{
+  stringValue: '"undefined"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'undefined',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\bson\src\objectid.ts:88:15)
+      at castObjectId (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongoose\lib\schematype.js:1204:12)
+      at ObjectId.SchemaType.castForQuery (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongoose\lib\schematype.js:1616:15)
+      at cast (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongoose\lib\cast.js:356:32)
+      at model.Query.Query.cast (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongoose\lib\query.js:4866:12)
+      at model.Query.Query._castConditions (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongoose\lib\query.js:2210:10)
+      at model.Query._findOne (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongoose\lib\query.js:2497:8)
+      at model.Query.exec (C:\Users\SUNYS\Desktop\NodeExpressMongoose - template - Copy\node_modules\mongoose\lib\query.js:4396:28),
+  valueType: 'string',
+  model: Model { User },
+  level: 'error',
+  message: 'globalErrorHandler Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "User"',
+  stack: 'CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "User"\n' +
+    '    at ObjectId.cast (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\schema\\objectid.js:248:11)\n' +
+    '    at ObjectId.SchemaType.applySetters (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\schematype.js:1204:12)\n' +
+    '    at ObjectId.SchemaType.castForQuery (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\schematype.js:1616:15)\n' +
+    '    at cast (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\cast.js:356:32)\n' +
+    '    at model.Query.Query.cast (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\query.js:4866:12)\n' +
+    '    at model.Query.Query._castConditions (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\query.js:2210:10)\n' +
+    '    at model.Query._findOne (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\query.js:2497:8)\n' +
+    '    at model.Query.exec (C:\\Users\\SUNYS\\Desktop\\NodeExpressMongoose - template - Copy\\node_modules\\mongoose\\lib\\query.js:4396:28)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'NodeExpressMongoose',
+  timestamp: '2023-07-17T10:15:58.769Z'
 }

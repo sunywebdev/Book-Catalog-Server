@@ -1,3 +1,4 @@
+import Book from '../book/book.model';
 import { IUser } from './user.interface';
 import { User } from './user.model';
 
@@ -30,8 +31,16 @@ const updateUserWishlist = async (
 
   return result;
 };
+
+const allWishlist = async (id: string) => {
+  const result = await User.findById(id).populate('wishlist');
+  const wishlist = result?.wishlist;
+  return wishlist;
+};
+
 export const UserService = {
   getUserById,
   updateUser,
   updateUserWishlist,
+  allWishlist,
 };

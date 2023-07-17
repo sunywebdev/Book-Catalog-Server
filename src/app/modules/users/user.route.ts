@@ -14,5 +14,6 @@ router.get(
 );
 router.patch('/:id', UserController.updateUser);
 router.patch('/:id/wishlist', UserController.updateUserWishlist);
+router.get('/:id/wishlist', UserController.allWishlist);
 
 export const UserRoutes = router;
